@@ -79,6 +79,10 @@ html, body {
     border: 1px solid rgba(35, 31, 32, 1);
     border-radius: 5px;}
 
+.part-width {width: 80%;
+    border: 1px solid rgba(19, 30, 78, 0.25);
+    border-radius: 6px;}
+
 h1 {color: #131e4e;}
 
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl {
@@ -98,11 +102,21 @@ code *, kbd *, pre *, samp * {
 
 blockquote {
   color: rgba(35, 31, 32, 1);
-  border-left: 5px solid rgb(228, 228, 228);
-  padding: 0px 10px;
-  margin-left: .3em;
+  border: 1px solid rgba(19, 30, 78, 0.25);
+  border-left: 2px solid rgba(19, 30, 78, 0.38);
+  border-right: 1px solid rgba(19, 30, 78, 0.18);
+  border-radius: 3px;
+  background: rgba(43, 93, 45, 0.08);
+  padding: 1px 10px;
+  margin-left: .3em; 
   width: 100%;
 }
+
+.fa-stack {display: flex; float:right;}
+.icon-background{color:white;}
+span.fa{font-family: "Arial", sans-serif;
+          color: rgba(35, 31, 32, .1);}
+.fa-circle-thin {color: rgba(35, 31, 32, .1);}
 
 code {
   background-color: rgb(228, 228, 228);
@@ -111,10 +125,13 @@ code {
   padding: 2px 4px;
 }
 
+blockquote>p>code {background-color: white;border: 1px solid rgba(19, 30, 78, 0.18)}
+
 hr {
   border: 0;
   border-top: 1px solid rgba(128, 128, 128, 0.5);
   margin: 2em 0;
+  width: 95%;
 }
 
 pre > code {
