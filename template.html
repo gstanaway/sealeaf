@@ -1,0 +1,243 @@
+  /*page style*/
+body {
+  background: #cccccc;
+  padding-bottom: 0;
+}
+.center {
+  margin: 0 auto;
+  margin-bottom: 2em;
+  padding-top: 1em;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-bottom: 2em;
+  width: 60%;
+  border: 1px solid rgba(35, 31, 32, .7);
+  background: white;
+  min-width: 765px; /*added recently*/
+  max-width: 960px; /*added recently*/
+}
+.export-container {
+  background: white;
+  padding: 2em;
+  display: block;
+}
+
+
+/*nav stuff*/
+
+.navbar {margin: 0 auto;
+         width: 60%;
+         min-width: 765px;
+         max-width: 960px;
+         }
+
+.fa {color:rgba(35, 31, 32, .9);}
+.fa:hover {color:rgba(35, 31, 32, 1);}
+a.navbar-brand {color:rgba(35, 31, 32, .9);}
+
+/*back to top footer*/
+.footer {
+  background: rgba(0, 0, 0, .6);
+  border: 1px solid rgba(35, 31, 32, .5);
+  color: white;
+  width: inherit;
+  height: 2em;
+  margin: 0 auto;
+  text-align: center;
+  min-width: 765px;
+  max-width: 960px; /*added recently*/
+}
+.footer:hover, .footer:focus {
+  background: rgba(0, 0, 0, .8);
+  text-decoration: none;
+}
+.go-top {
+  color: white;
+  display: none; /*hide until scroll-down*/
+}
+
+/*centering image in footer*/
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+img#arrow {
+  vertical-align: middle;
+  max-height: 15px;
+  max-width: 160px;
+}
+
+/*markdown style*/
+html, body {
+  color: rgba(35, 31, 32, 1);
+  font-variant-ligatures: common-ligatures;
+  line-height: 1.65;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+}
+
+h1 {color: #274e13;}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl {
+  margin: 1em 0;
+}
+ol ul, ul ol, ul ul, ol ol {
+  margin: 0em;
+}
+
+/*links*/
+a {
+  color: #274e13;
+  white-space: nowrap;
+}
+a:hover {
+  color: #274e13;
+}
+
+code, kbd, pre, samp {
+  font-family: "Office Code Pro", monospace;
+  font-size: 1em;
+}
+code *, kbd *, pre *, samp * {
+  font-size: inherit;
+}
+
+blockquote {
+  color: rgba(35, 31, 32, 1);
+  border-left: 5px solid rgb(228, 228, 228);
+  margin-left: .3em;
+  padding: 0px 10px;
+}
+
+code {
+  background-color: rgb(228, 228, 228);
+  color: rgba(35, 31, 32, 1);
+  border-radius: 3px;
+  padding: 2px 4px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+  margin: 2em 0;
+}
+
+pre > code {
+  background-color: rgb(228, 228, 228);
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  -webkit-text-size-adjust: none;
+}
+.toc ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+/*table stuff*/
+table {
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid rgba(35, 31, 32, .2);
+}
+thead {
+  background: rgba(35, 31, 32, .05);
+  border: 1px solid rgba(35, 31, 32, .2);
+}
+
+td, th {
+  border: 1px solid #e0e0e0;
+  padding: 8px 12px;
+  text-align: left;
+}
+td:last-child, th:last-child {
+  border-right: 0;
+}
+
+td {
+  border-top: 1px solid #e0e0e0;
+}
+td>ol, td>ul{
+  padding-left:1em;}
+
+kbd {
+  background-color: #fff;
+  border: 1px solid rgba(63, 63, 63, 0.25);
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(63, 63, 63, 0.25);
+  color: #333;
+  display: inline-block;
+  font-size: 0.95em;
+  margin: 0 0.1em;
+  padding: 0.1em 0.6em;
+  white-space: nowrap;
+}
+abbr[title] {
+  border-bottom: 1px dotted #777;
+  cursor: help;
+}
+.footnote {
+  font-size: 0.8em;
+  position: relative;
+  top: -0.25em;
+  vertical-align: top;
+}
+
+.export-container
+  > :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(table):not([align]) {
+  text-align: justify;
+}
+
+/*deep anchor links*/
+.anchorjs-link{color:inherit}
+@media (max-width:480px){.anchorjs-link{display:none}}:hover>.anchorjs-link{opacity:.75;-webkit-transition:color .16s linear;-o-transition:color .16s linear;transition:color .16s linear}.anchorjs-link:focus,:hover>.anchorjs-link:hover{text-decoration:none;opacity:1}
+
+
+/*external link icon thing */
+
+/*add icon to links to external site */
+/*a:not( [href^='#'] ):not( [href^='/'] ):not( [href^='./'] ):not( [href*='https://gstanaway.github.io/sealeaf/'] ):not( [href^='#'] ):not( [class^='nav-item'] ):not( [class^='nav-link'] ):not( [class^='navbar-brand'] ):after {
+    font-family: 'FontAwesome';
+    content: " \f08e";
+}
+
+a[href$= ".pdf"]:after {
+    font-family: 'FontAwesome';
+    content: " \f1c1";
+}*/
+
+/*Minimize margins for iPad*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+
+.center {width:100%;
+  padding-left: 1em;
+  padding-right: 1em;}
+.navbar {width:100%;}
+.footer {width: 100%;
+        margin: 0;
+
+        border: 1px solid rgba(35, 31, 32, .5);
+        height: 5%;
+        width: 100%;
+        text-align: center;
+        max-width: 960px; /*added recently*/}
+}
+
+/*for printing*/
+
+Added for printing:
+@media print {
+              nav{display:none !important;}
+              blockquote{border:none;
+                         border-left: 4px solid black; !important}
+              .center{border: none !important;
+                      width: 100% !important;
+                      padding: 0 !important;}
+              .footer {display: none !important;}
+              .break { page-break-before: always; }
+              }
