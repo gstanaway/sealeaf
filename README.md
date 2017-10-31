@@ -1,5 +1,5 @@
 # sealeaf
-Publish to your repo through Classeur.
+Publish to your repo through Classeur (or StackEdit).
 
 Copy the contents of `sealeaf_template.html` into Classeur's template manager during publication. 
 
